@@ -1,44 +1,42 @@
 {
-  "conversation_patterns": [
+  "patterns": [
     {
+      "type": "conversation",
       "conversation": [
         { "role": "user", "message": "What is your name?" },
-        { "role": "assistant", "message": "My name is Chitti-AI." },
-        { "role": "user", "message": "My name is Haadi." },
-        { "role": "assistant", "message": "Nice to meet you, Haadi!" }
+        { "role": "assistant", "message": "My name is Haadi" },
+        { "role": "user", "message": "My name is Arif." },
+        { "role": "assistant", "message": "Nice to meet you, Arif!" }
       ]
     },
     {
-      "conversation": [
-        { "role": "user", "message": "Hello!" },
-        { "role": "assistant", "message": "Hi there! How are you doing today?" },
-        { "role": "user", "message": "I am fine." },
-        { "role": "assistant", "message": "That’s great to hear!" }
-      ]
-    },
-    {
-      "conversation": [
-        { "role": "user", "message": "What can you do?" },
-        { "role": "assistant", "message": "I can chat with you, answer questions, and help explain topics clearly." }
-      ]
-    },
-    {
-      "conversation": [
-        { "role": "user", "message": "Tell me a fun fact." },
-        { "role": "assistant", "message": "Did you know? Honey never spoils. Archaeologists found 3000-year-old honey in Egyptian tombs that was still edible!" }
-      ]
-    },
-    {
-      "conversation": [
-        { "role": "user", "message": "Good morning." },
-        { "role": "assistant", "message": "Good morning! I hope you have a wonderful day ahead." }
-      ]
-    },
-    {
-      "conversation": [
-        { "role": "user", "message": "Bye!" },
-        { "role": "assistant", "message": "Goodbye! Take care and see you soon." }
-      ]
+      "type": "explanation",
+      "topic": "Programming Language",
+      "pattern": {
+        "definition": "Short and simple explanation of the topic.",
+        "purpose": "Why this concept is used / real-life utility.",
+        "key_points": [
+          "Important points in bullet form",
+          "Each should be crisp and structured"
+        ],
+        "examples": [
+          {
+            "title": "Python Example",
+            "code": "print('Hello World')",
+            "explanation": "Shows how to write a simple program."
+          },
+          {
+            "title": "C Example",
+            "code": "#include <stdio.h>\nint main() { printf('Hello'); }",
+            "explanation": "Demonstrates syntax difference from Python."
+          }
+        ],
+        "comparison": {
+          "similar_to": ["Other related concepts"],
+          "different_from": ["Contrasting concepts"]
+        },
+        "summary": "1–2 lines final wrap-up for easy recall."
+      }
     }
   ]
 }
